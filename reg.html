@@ -1,0 +1,30 @@
+<!doctype html>
+<html ng-app="onSpotReg">
+<head>
+ 	<script src="angular.min.js"></script>
+	<script src="bower_components/angular-local-storage/dist/angular-local-storage.min.js"></script>
+	<script src="reg.js"></script>
+</head>
+
+<body ng-controller='Ctrl'>
+	<form style="padding: 10px">
+	<h3>On Spot Event Registration:</h3>
+	<div>
+		<p>TeamId :&nbsp;&nbsp; <input type="text" ng-model="teamId"></p>
+		<p>Event : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" ng-model="eventname"></p>
+		<input type="submit" ng-click="register()">
+		<input type="button" ng-click="checkConnectionAndSync()" value="Sync">
+	</div>
+    </form>
+
+	<!-- <form>
+	<h3>Create Team:</h3>
+	<div>
+		<p>Team Name : <input type="text" ng-model="teamName"></p>
+		<p>Team Members : <input type="text" ng-model="teamMembers"></p>
+		<p>Team Leader : <input type="text" ng-model="teamLeader"></p>
+		<input type="submit" onclick="register()">
+	</div>
+    </form> -->    
+</body>
+</html>
